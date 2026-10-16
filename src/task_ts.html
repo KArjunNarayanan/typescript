@@ -6,13 +6,46 @@
     <title>Typescript Task 1</title>
 </head>
 <body>
-    <h1>Users Details</h1><br><br>
+    <h1>Users Details</h1>
     <form id="formSubmit">
         <input type="text" id="username" placeholder="Enter name">
         <input type="password" id="password" placeholder="Enter password">
         <button id="buttonSave" type="submit">Save</button>
         <p id="result"></p>
     </form>
+    <button id="load">Load</button>
+    <button id="dele">Delete</button>
+
+    <h1>Student Registration Form</h1>
+
+    <form id="studentForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" min="1" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" required> <br><br>
+
+        <label for="course">Course:</label>
+        <select id="course" required>
+            <option value="">Select a course</option>
+            <option value="Python Full Stack">Python Full Stack</option>
+            <option value="MERN Stack">MERN Stack</option>
+            <option value="Data Science">Data Science</option>
+            <option value="Java Full Stack">Java Full Stack</option>
+        </select><br><br>
+        <button type="submit">Register Student</button>
+    </form>
+
+     <h2>Saved Student Information</h2>
+
+    <div id="studentInfo"></div>
+
 
     <div id="userList"></div>
     <script src="../dist/task_ts.js"></script>
